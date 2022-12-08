@@ -3,6 +3,16 @@ body
     background-color:#80808054;
 }
 
+/* hide scrollbar but allow scrolling */
+.card-group{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.card-group::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
 .card {
     position: relative;
     display: -webkit-box;
